@@ -72,8 +72,11 @@ print(x)'''
 
 x=[5,10,20,40,60,20,20,20,20]
 
-for i, data in enumerate(x):
-    if i==20:
-        print(x.index(20))
-        
+# for i,data in enumerate(x):
+#     if data == 20:
+#         print(i)
+
+for i in range(len(x)):
+    if x[i] == 20:
+        print(i, end="\n")
     
