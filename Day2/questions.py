@@ -92,7 +92,13 @@
 # print(l1)
 
 
-#Question 12:Find the index of a specific element in a list.
+#Question 12:Create a list of 1 to 100 and print only multiples of 5.
+
+x=[]
+for i in range(1,100):
+    i+=1
+    if i%5==0:
+        print(i)
 
 
 
