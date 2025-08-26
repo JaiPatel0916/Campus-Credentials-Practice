@@ -76,9 +76,24 @@
 
 #Question 10: Check if a list is empty or not.
 
-li=[]
+# li=[]
 
-if li:
-    print("True")
-else:
-    print("False")
+# if li:
+#     print("True")
+# else:
+#     print("False")
+    
+
+#Question 11: Merge two lists into one.
+# l1=[1,2,3,4,5]
+# l2=[6,7,8,9,10]
+
+# l1= l1+l2
+# print(l1)
+
+
+#Question 12:Find the index of a specific element in a list.
+
+
+
+
