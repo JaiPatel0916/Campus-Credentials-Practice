@@ -13,6 +13,7 @@ class emp(Boss):
     def task1(self):
         print("Complete")
         
+
 e=emp()
 e.task1()
 e.salary()
