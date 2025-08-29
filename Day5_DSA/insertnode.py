@@ -27,6 +27,11 @@ class singlylinklist:
         while t!=None:
             print(t.data,end="->")
             t=t.next
+    def deletenode(self):
+        if self.head==None:
+            print("Empty")
+        else :
+            self.head= self.head.next
             
 s=singlylinklist()
 s.insertnodeatlast()
@@ -34,4 +39,5 @@ s.insertnodeatlast()
 s.insertnodeatlast()
 s.insertnodeatlast()
 s.insertnodeatfirst()
+s.deletenode()
 s.displaynode()
