@@ -46,19 +46,30 @@
 
 #Task 3
 
-choice = int(input("Enter your choice: "))
+# choice = int(input("Enter your choice: "))
 
-match choice:
-    case 1:
-       a= int(input("Enter first number: "))
-       b= int(input("Enter first number: "))
-       print(a+b)
-    case 2:
-        c= int(input("Enter your number: ")) 
-        print(c*c)
-    case 3:
-        r= int(input("Enter the radius: ")) 
-        print(3.14*r*r)
+# match choice:
+#     case 1:
+#        a= int(input("Enter first number: "))
+#        b= int(input("Enter first number: "))
+#        print(a+b)
+#     case 2:
+#         c= int(input("Enter your number: ")) 
+#         print(c*c)
+#     case 3:
+#         r= int(input("Enter the radius: ")) 
+#         print(3.14*r*r)
+
+
+#Dictionary match
+
+x={"name":"Jai","Age":20}
+
+match x:
+    case{"name":"Shivam","Age":22}:
+        print("Student 1 ")
+    case{"name":"Jai","Age":20}:
+        print("Student 2")
         
 
 
