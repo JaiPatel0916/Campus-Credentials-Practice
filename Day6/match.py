@@ -8,3 +8,9 @@ choice = int(input("Entrt your chice: "))
 #     case 3:
 #         print("Three")
         
+
+match choice:
+    case 1|2|3:
+        print("Hello")
+    case 4|5|6:
+        print("JAI")
