@@ -73,6 +73,7 @@ class singlylinklist:
                 t.next=tmp
         else:
             print("Invalid Position")
+            
     def deletefirstnode(self):
         if self.head==None:
             print("List is empty")
@@ -93,7 +94,29 @@ class singlylinklist:
             while t.next.next:
                  t=t.next
             t.next = None
-                    
+    
+    
+    def deleteanynode(self):
+        position = int(input("Enter Position: "))
+        totalNodes=self.countNode()
+        
+        if position==1:
+            s.deletefirstnode()
+        elif position==totalNodes:
+            s.deletelastnode()
+        
+        else:
+            i=1
+            t=self.head
+            while i<=position-2:
+                t=t.next
+                i+=1
+            tmp=t.next
+            t.next=tmp.next
+            tmp.next = None
+            tmp:None
+            
+        
 s=singlylinklist()
 
 while True:
@@ -105,6 +128,7 @@ while True:
     print("5. Display all the nodes")
     print("6. Delete First node")
     print("7. Delete Last node")
+    print("8. Delete any node")
     print("0: Exit")
     
     choice = int(input("\nEnter your choice: "))
@@ -129,7 +153,10 @@ while True:
         
         
         case 7:
-            s.deletelastnode()    
+            s.deletelastnode()   
+        
+        case 8:
+            s.deleteanynode() 
         case 0:
             exit()
             
