@@ -63,13 +63,22 @@
 
 #Dictionary match
 
-x={"name":"Jai","Age":20}
+# x={"name":"Jai","Age":20}
 
-match x:
-    case{"name":"Shivam","Age":22}:
-        print("Student 1 ")
-    case{"name":"Jai","Age":20}:
-        print("Student 2")
+# match x:
+#     case{"name":"Shivam","Age":22}:
+#         print("Student 1 ")
+#     case{"name":"Jai","Age":20}:
+#         print("Student 2")
         
+        
+#conditions in match case
+per=29
 
+
+match per:
+    case per if per%2==1:
+        print("Hii ODD ")
+    case per if per%2 == 0:
+        print("Hii EVEN")
 
