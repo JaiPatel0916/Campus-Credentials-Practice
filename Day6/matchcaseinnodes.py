@@ -38,6 +38,7 @@ class singlylinklist:
         return(cnt)
             
     def insertNodeAnyWhere(self):
+        
         totalNodes=self.countNode()
         position=int(input("Enter Position:"))
         if position>=1 and position <= totalNodes+1:
@@ -72,8 +73,27 @@ class singlylinklist:
                 t.next=tmp
         else:
             print("Invalid Position")
+    def deletefirstnode(self):
+        if self.head==None:
+            print("List is empty")
+        else:
+            t=self.head
+            self.head=self.head.next
+            t.next=None
+            t=None  
             
+    def deletelastnode(self):
+        if self.head==None:
+            print("List is empty")
+        elif self.head.next==None:
+            self.head=None     
             
+        else:
+            t=self.head
+            while t.next.next:
+                 t=t.next
+            t.next = None
+                    
 s=singlylinklist()
 
 while True:
@@ -83,6 +103,8 @@ while True:
     print("3. Insert Node at any where")
     print("4. CountTotal nodes")
     print("5. Display all the nodes")
+    print("6. Delete First node")
+    print("7. Delete Last node")
     print("0: Exit")
     
     choice = int(input("\nEnter your choice: "))
@@ -101,7 +123,13 @@ while True:
             
         case 5:
             s.displaynode()
-            
+        
+        case 6:
+            s.deletefirstnode()
+        
+        
+        case 7:
+            s.deletelastnode()    
         case 0:
             exit()
             
