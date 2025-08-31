@@ -115,7 +115,19 @@ class singlylinklist:
             t.next=tmp.next
             tmp.next = None
             tmp:None
+
+
+    def deletenodebyvalue(self):
+        value = int(input("Enter value of the node to  delete: "))
+        
+        if value==self.head.data:
+            s.deletefirstnode()
+        elif value==
+            s.deletelastnode()
             
+        else:
+            pass
+              
         
 s=singlylinklist()
 
@@ -129,6 +141,7 @@ while True:
     print("6. Delete First node")
     print("7. Delete Last node")
     print("8. Delete any node")
+    print("9. Delete node by their value")
     print("0: Exit")
     
     choice = int(input("\nEnter your choice: "))
@@ -157,6 +170,9 @@ while True:
         
         case 8:
             s.deleteanynode() 
+        
+        case 9:
+            s.deletenodebyvalue()
         case 0:
             exit()
             
