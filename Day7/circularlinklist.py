@@ -17,6 +17,22 @@ class circularlinklist:
             t.next=Node(int(input("Enter Data: ")))
             t.next.next=self.head
     
+    
+    def InsertNodeAtFirst(self):
+        if self.head==None:
+            self.InserNodeAtLast()
+        else:
+            t=self.head
+            while t.next!=self.head:
+                t=t.next
+            tmp=Node(int(input("Enter data: ")))
+            tmp.next=self.head
+            self.head=tmp
+            t.next=self.head
+                
+                
+            
+   
     def display(self):
         if self.head==None:
             print("Link list is empty")
@@ -33,4 +49,5 @@ l=circularlinklist()
 l.InserNodeAtLast()
 l.InserNodeAtLast()
 l.InserNodeAtLast()
+l.InsertNodeAtFirst()
 l.display()
